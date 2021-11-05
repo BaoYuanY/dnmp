@@ -159,7 +159,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       TZ: "$TZ"
-  select host,user,password from user;
+
+
 #  mysql5:
 #    image: mysql:${MYSQL5_VERSION}
 #    container_name: mysql5
