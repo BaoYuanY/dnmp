@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="改了一下" />
+    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="改了一下">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/nginx/nginx.localhost.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/nginx.localhost.error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/php/fpm.slow.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/fpm.slow.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/php/php.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/php.error.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpServers">
     <servers>
@@ -87,7 +97,11 @@
       <workItem from="1639017055425" duration="270000" />
       <workItem from="1639463209418" duration="71000" />
       <workItem from="1639463333932" duration="2197000" />
-      <workItem from="1639558737490" duration="1354000" />
+      <workItem from="1639558737490" duration="1759000" />
+      <workItem from="1640593412101" duration="23000" />
+      <workItem from="1640828778151" duration="6000" />
+      <workItem from="1640936058766" duration="245000" />
+      <workItem from="1641363006237" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="改了一下">
       <created>1631756980126</created>
@@ -147,7 +161,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="改了一下" />
