@@ -4229,3 +4229,77 @@ script_filename = /www/partner-order-system/public/index.php
 [0x0000ffff8cc16650] think\{closure}() /www/partner-order-system/vendor/topthink/framework/src/think/Pipeline.php:59
 [0x0000ffff8cc165b0] think\{closure}() /www/partner-order-system/app/admin/middleware/Auth.php:56
 [0x0000ffff8cc16140] handle() /www/partner-order-system/vendor/topthink/framework/src/think/Middleware.php:142
+
+[19-Jan-2022 10:10:14]  [pool www] pid 9
+script_filename = /www/rms-api/public/index.php
+[0x0000ffff8c018460] exec() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php:27
+[0x0000ffff8c0182c0] connect() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php:184
+[0x0000ffff8c018190] Illuminate\Database\Connectors\{closure}() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1021
+[0x0000ffff8c018130] call_user_func() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1021
+[0x0000ffff8c018080] getPdo() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:1057
+[0x0000ffff8c017f40] getReadPdo() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:433
+[0x0000ffff8c017eb0] getPdoForSelect() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:359
+[0x0000ffff8c017cd0] Illuminate\Database\{closure}() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:696
+[0x0000ffff8c017c00] runQueryCallback() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:663
+[0x0000ffff8c017a70] run() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:367
+[0x0000ffff8c0179d0] select() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2351
+[0x0000ffff8c017920] runSelect() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2339
+[0x0000ffff8c017820] Illuminate\Database\Query\{closure}() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2873
+[0x0000ffff8c017720] onceWithColumns() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2340
+[0x0000ffff8c017600] get() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:615
+[0x0000ffff8c0173e0] getModels() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:599
+[0x0000ffff8c017260] get() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php:259
+[0x0000ffff8c0171d0] first() /www/rms-api/app/Kuafu/Order/Service/OrderMerchantBaseService.php:812
+[0x0000ffff8c016ea0] couponPackageDetailBase() /www/rms-api/app/Kuafu/Order/Service/OrderMerchantUseService.php:543
+[0x0000ffff8c016e10] couponPackageDetail() /www/rms-api/app/Kuafu/CouponPackage/Controller/Merchant/CouponPackageController.php:65
+
+[19-Jan-2022 10:51:07]  [pool www] pid 9
+script_filename = /www/rms-api/public/index.php
+[0x0000ffff8c016f30] file_get_contents() /www/rms-api/vendor/facade/ignition/src/ErrorPage/ErrorPageViewModel.php:151
+[0x0000ffff8c016e80] getAssetContents() /www/rms-api/vendor/facade/ignition/resources/views/errorPage.php:51
+
+[19-Jan-2022 13:39:23]  [pool www] pid 8
+script_filename = /www/rms-api/public/index.php
+[0x0000ffff8c0173f0] prepare() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:359
+[0x0000ffff8c017210] Illuminate\Database\{closure}() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:696
+[0x0000ffff8c017140] runQueryCallback() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:663
+[0x0000ffff8c016fb0] run() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:367
+[0x0000ffff8c016f10] select() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2351
+[0x0000ffff8c016e60] runSelect() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2339
+[0x0000ffff8c016d60] Illuminate\Database\Query\{closure}() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2873
+[0x0000ffff8c016c60] onceWithColumns() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2340
+[0x0000ffff8c016b40] get() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:615
+[0x0000ffff8c016920] getModels() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:599
+[0x0000ffff8c0167a0] get() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php:195
+[0x0000ffff8c016720] get() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php:160
+[0x0000ffff8c0166c0] getEager() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:663
+[0x0000ffff8c016530] eagerLoadRelation() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:632
+[0x0000ffff8c016430] eagerLoadRelations() /www/rms-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:600
+[0x0000ffff8c016310] get() /www/rms-api/app/Kuafu/Order/Service/OrderMerchantBaseService.php:615
+[0x0000ffff8c016110] couponPackageListsBase() /www/rms-api/app/Kuafu/Order/Service/OrderMerchantUseService.php:484
+[0x0000ffff8c016010] couponPackageLists() /www/rms-api/app/Kuafu/CouponPackage/Controller/Merchant/CouponPackageController.php:29
+[0x0000ffff8c015ce0] lists() /www/rms-api/vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+[0x0000ffff8c015c50] callAction() /www/rms-api/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:45
+
+[25-Jan-2022 17:39:44]  [pool www] pid 114
+script_filename = /www/partner-order-system/public/index.php
+[0x0000ffff82e18180] prepare() /www/partner-order-system/vendor/topthink/think-orm/src/db/PDOConnection.php:741
+[0x0000ffff82e17ed0] getPDOStatement() /www/partner-order-system/vendor/topthink/think-orm/src/db/PDOConnection.php:688
+[0x0000ffff82e17bd0] pdoQuery() /www/partner-order-system/vendor/topthink/think-orm/src/db/PDOConnection.php:886
+[0x0000ffff82e17af0] select() /www/partner-order-system/vendor/topthink/think-orm/src/db/BaseQuery.php:1090
+[0x0000ffff82e17960] select() /www/partner-order-system/app/admin/controller/StoreController.php:80
+[0x0000ffff82e178a0] app\admin\controller\{closure}() /www/partner-order-system/extend/tools/ListUtils.php:13
+[0x0000ffff82e17810] tools\{closure}() /www/partner-order-system/vendor/topthink/think-orm/src/Paginator.php:395
+[0x0000ffff82e176c0] each() /www/partner-order-system/extend/tools/ListUtils.php:14
+[0x0000ffff82e174a0] list() /www/partner-order-system/app/admin/controller/StoreController.php:82
+[0x0000ffff82e17070] index() /www/partner-order-system/vendor/topthink/framework/src/think/Container.php:343
+[0x0000ffff82e17000] invokeArgs() /www/partner-order-system/vendor/topthink/framework/src/think/Container.php:343
+[0x0000ffff82e16f40] invokeReflectMethod() /www/partner-order-system/vendor/topthink/framework/src/think/route/dispatch/Controller.php:110
+[0x0000ffff82e16be0] think\route\dispatch\{closure}() /www/partner-order-system/vendor/topthink/framework/src/think/Pipeline.php:59
+[0x0000ffff82e16b40] think\{closure}() /www/partner-order-system/vendor/topthink/framework/src/think/Pipeline.php:66
+[0x0000ffff82e16a50] then() /www/partner-order-system/vendor/topthink/framework/src/think/route/dispatch/Controller.php:113
+[0x0000ffff82e168f0] exec() /www/partner-order-system/vendor/topthink/framework/src/think/route/Dispatch.php:89
+[0x0000ffff82e166d0] run() /www/partner-order-system/vendor/topthink/framework/src/think/Route.php:772
+[0x0000ffff82e16650] think\{closure}() /www/partner-order-system/vendor/topthink/framework/src/think/Pipeline.php:59
+[0x0000ffff82e165b0] think\{closure}() /www/partner-order-system/app/admin/middleware/Auth.php:56
+[0x0000ffff82e16140] handle() /www/partner-order-system/vendor/topthink/framework/src/think/Middleware.php:142

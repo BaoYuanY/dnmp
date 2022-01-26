@@ -29,7 +29,7 @@ services:
     build:
       context: ./services/php
       args:
-        PHP_VERSION: php:7.4.25-fpm-alpine
+        PHP_VERSION: php:7.4.27-fpm-alpine
         CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
         PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix
         TZ: "$TZ"
