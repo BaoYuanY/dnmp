@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="改了一下">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/php/php.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/php.error.log" afterDir="false" />
-    </list>
+    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="改了一下" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +103,7 @@
       <workItem from="1642666631022" duration="624000" />
       <workItem from="1643176392817" duration="377000" />
       <workItem from="1643184775467" duration="706000" />
+      <workItem from="1644284174572" duration="754000" />
     </task>
     <task id="LOCAL-00001" summary="改了一下">
       <created>1631756980126</created>
@@ -171,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643176727657</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="改了一下">
+      <created>1644284205475</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1644284205475</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5038,3 +5038,33 @@ Stack trace:
 [27-Jan-2022 09:23:16 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
 [27-Jan-2022 09:47:36 UTC] PHP Warning:  Failed loading Zend extension 'php_xdebug-2.4.1-7.0-vc14-nts.dll' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll.so (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll.so: No such file or directory)) in Unknown on line 0
 [27-Jan-2022 09:47:36 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[08-Feb-2022 02:38:30 UTC] PHP Warning:  Failed loading Zend extension 'php_xdebug-2.4.1-7.0-vc14-nts.dll' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20180731/php_xdebug-2.4.1-7.0-vc14-nts.dll (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20180731/php_xdebug-2.4.1-7.0-vc14-nts.dll: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20180731/php_xdebug-2.4.1-7.0-vc14-nts.dll.so (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20180731/php_xdebug-2.4.1-7.0-vc14-nts.dll.so: No such file or directory)) in Unknown on line 0
+[08-Feb-2022 02:38:30 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[08-Feb-2022 02:38:30 UTC] PHP Warning:  Failed loading Zend extension 'php_xdebug-2.4.1-7.0-vc14-nts.dll' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll.so (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20190902/php_xdebug-2.4.1-7.0-vc14-nts.dll.so: No such file or directory)) in Unknown on line 0
+[08-Feb-2022 02:38:30 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[08-Feb-2022 10:43:59 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'ExceptionNotifier' not found in /www/tiger-api/app/Exceptions/Handler.php:46
+Stack trace:
+#0 /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(162): App\Exceptions\Handler->report(Object(Error))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Error))
+#2 {main}
+  thrown in /www/tiger-api/app/Exceptions/Handler.php on line 46
+[08-Feb-2022 10:43:59 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'ExceptionNotifier' not found in /www/tiger-api/app/Exceptions/Handler.php:46
+Stack trace:
+#0 /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(162): App\Exceptions\Handler->report(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#1 /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(204): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#2 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#3 {main}
+  thrown in /www/tiger-api/app/Exceptions/Handler.php on line 46
+[08-Feb-2022 10:46:59 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'ExceptionNotifier' not found in /www/tiger-api/app/Exceptions/Handler.php:46
+Stack trace:
+#0 /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(162): App\Exceptions\Handler->report(Object(Error))
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Error))
+#2 {main}
+  thrown in /www/tiger-api/app/Exceptions/Handler.php on line 46
+[08-Feb-2022 10:46:59 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'ExceptionNotifier' not found in /www/tiger-api/app/Exceptions/Handler.php:46
+Stack trace:
+#0 /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(162): App\Exceptions\Handler->report(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#1 /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(204): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#2 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#3 {main}
+  thrown in /www/tiger-api/app/Exceptions/Handler.php on line 46
