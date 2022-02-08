@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="改了一下">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/php/fpm.slow.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/fpm.slow.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/php/php.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/php.error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/nginx/conf.d" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -53,9 +51,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/nginx/conf.d" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/services" />
-      <recent name="$PROJECT_DIR$/services/nginx/conf.d" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -107,7 +105,8 @@
       <workItem from="1642387843927" duration="81000" />
       <workItem from="1642388000282" duration="31000" />
       <workItem from="1642666631022" duration="624000" />
-      <workItem from="1643176392817" duration="50000" />
+      <workItem from="1643176392817" duration="377000" />
+      <workItem from="1643184775467" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="改了一下">
       <created>1631756980126</created>
@@ -165,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642145136700</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="改了一下">
+      <created>1643176727657</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643176727657</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +189,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="改了一下" />
     <option name="LAST_COMMIT_MESSAGE" value="改了一下" />
   </component>
