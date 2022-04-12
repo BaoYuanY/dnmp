@@ -31,13 +31,13 @@ services:
       args:
         PHP_VERSION: php:7.4.25-fpm-alpine
         CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis
+        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix
         TZ: "$TZ"
     container_name: php74
     expose:
       - 9501
     extra_hosts:
-      - "www.site1.com:172.17.0.1"
+      - "rm-bp1066pu30bmyf7t19o.mysql.rds.aliyuncs.com:47.118.225.54"
     volumes:
       - /tmp/:/tmp/:rw
       - ${SOURCE_DIR}:/www/:rw
