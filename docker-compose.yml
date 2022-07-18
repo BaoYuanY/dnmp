@@ -38,6 +38,7 @@ services:
       - 9501
     extra_hosts:
       - "rm-bp1066pu30bmyf7t19o.mysql.rds.aliyuncs.com:47.118.225.54"
+      - "qa-b.51kuafu.com:47.98.127.58"
     volumes:
       - /tmp/:/tmp/:rw
       - ${SOURCE_DIR}:/www/:rw
@@ -195,20 +196,20 @@ services:
 #    networks:
 #      - default
 
-  redis:
-    image: redis:${REDIS_VERSION}
-    container_name: redis
-    ports:
-      - "6379:6379"
-    volumes:
-      - ${REDIS_CONF_FILE}:/etc/redis.conf:ro
-      - ${DATA_DIR}/redis:/data/:rw
-    restart: always
-    entrypoint: ["redis-server", "/etc/redis.conf"]
-    environment:
-      TZ: "$TZ"
-    networks:
-      - default
+#  redis:
+#    image: redis:${REDIS_VERSION}
+#    container_name: redis
+#    ports:
+#      - "6379:6379"
+#    volumes:
+#      - ${REDIS_CONF_FILE}:/etc/redis.conf:ro
+#      - ${DATA_DIR}/redis:/data/:rw
+#    restart: always
+#    entrypoint: ["redis-server", "/etc/redis.conf"]
+#    environment:
+#      TZ: "$TZ"
+#    networks:
+#      - default
 
   redis6:
     image: redis:6.2.6-alpine3.14
