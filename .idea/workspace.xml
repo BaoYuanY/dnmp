@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="改了一下" />
+    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="改了一下">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/php/php.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/php.error.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,19 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/nginx/conf.d" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/one/Desktop/www/docker-dnmp/services/nginx/conf.d&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/services/nginx/conf.d" />
@@ -104,6 +105,9 @@
       <workItem from="1643176392817" duration="377000" />
       <workItem from="1643184775467" duration="706000" />
       <workItem from="1644284174572" duration="754000" />
+      <workItem from="1657688505870" duration="777000" />
+      <workItem from="1658494251559" duration="2177000" />
+      <workItem from="1658926894681" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="改了一下">
       <created>1631756980126</created>
