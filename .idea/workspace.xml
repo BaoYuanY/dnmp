@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="2022-07-27">
-      <change beforePath="$PROJECT_DIR$/services/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/services/php/php.ini" afterDir="false" />
+    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="2022-07-27  php报错On">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/php/php.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/php.error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,10 @@
       <workItem from="1644284174572" duration="754000" />
       <workItem from="1657688505870" duration="777000" />
       <workItem from="1658494251559" duration="2177000" />
-      <workItem from="1658926894681" duration="977000" />
+      <workItem from="1658926894681" duration="1682000" />
+      <workItem from="1660807729219" duration="49000" />
+      <workItem from="1660807990427" duration="26000" />
+      <workItem from="1660808407345" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="改了一下">
       <created>1631756980126</created>
@@ -184,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658927263226</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2022-07-27  php报错On">
+      <created>1658927911189</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658927911189</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +218,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="改了一下" />
     <MESSAGE value="2022-07-27" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-07-27" />
+    <MESSAGE value="2022-07-27  php报错On" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-07-27  php报错On" />
   </component>
 </project>

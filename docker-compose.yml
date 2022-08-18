@@ -158,6 +158,7 @@ services:
       - default
     environment:
       MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_ROOT_HOST: "%"
       TZ: "$TZ"
 #  mysql5:
 #    image: mysql:${MYSQL5_VERSION}
