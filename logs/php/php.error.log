@@ -5179,3 +5179,8 @@ Stack trace:
 [22-Aug-2022 02:53:54 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
 [22-Aug-2022 02:56:14 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
 [22-Aug-2022 02:56:18 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[22-Aug-2022 03:01:33 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[22-Aug-2022 03:01:33 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[22-Aug-2022 03:01:51 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[22-Aug-2022 03:03:11 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[22-Aug-2022 03:03:11 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
