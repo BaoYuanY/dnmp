@@ -4303,3 +4303,33 @@ script_filename = /www/partner-order-system/public/index.php
 [0x0000ffff82e16650] think\{closure}() /www/partner-order-system/vendor/topthink/framework/src/think/Pipeline.php:59
 [0x0000ffff82e165b0] think\{closure}() /www/partner-order-system/app/admin/middleware/Auth.php:56
 [0x0000ffff82e16140] handle() /www/partner-order-system/vendor/topthink/framework/src/think/Middleware.php:142
+
+[18-Aug-2022 16:08:14]  [pool www] pid 6
+script_filename = /www/tiger-api/public/index.php
+[0x0000ffff87015c80] Composer\Autoload\includeFile() /www/tiger-api/vendor/composer/ClassLoader.php:428
+[0x0000ffff87015be0] loadClass() unknown:0
+[0x0000ffff87015b80] spl_autoload_call() unknown:0
+[0x0000ffffc34d50a0] ???() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php:23
+
+[22-Aug-2022 10:29:06]  [pool www] pid 8
+script_filename = /www/tiger-api/public/index.php
+[0x0000ffffbae18520] curl_exec() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php:44
+[0x0000ffffbae183b0] __invoke() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php:28
+[0x0000ffffbae182d0] GuzzleHttp\Handler\{closure}() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php:48
+[0x0000ffffbae18200] GuzzleHttp\Handler\{closure}() /www/tiger-api/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php:64
+[0x0000ffffbae17f30] __invoke() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Middleware.php:31
+[0x0000ffffbae17dc0] GuzzleHttp\{closure}() /www/tiger-api/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php:71
+[0x0000ffffbae17bf0] __invoke() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Middleware.php:61
+[0x0000ffffbae17b10] GuzzleHttp\{closure}() /www/tiger-api/vendor/guzzlehttp/guzzle/src/HandlerStack.php:75
+[0x0000ffffbae17a60] __invoke() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Client.php:331
+[0x0000ffffbae17790] transfer() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Client.php:168
+[0x0000ffffbae17590] requestAsync() /www/tiger-api/vendor/guzzlehttp/guzzle/src/Client.php:187
+[0x0000ffffbae174d0] request() /www/tiger-api/app/Helper/helper.php:249
+[0x0000ffffbae17360] getRmsMessageCommon() /www/tiger-api/app/Service/OpenShop/User/RmsUserService.php:114
+[0x0000ffffbae17090] getRmsAuthUserInfo() /www/tiger-api/app/Http/Middleware/OpenShop/AppletAuth.php:73
+[0x0000ffffbae16a70] handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[0x0000ffffbae16810] Illuminate\Pipeline\{closure}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[0x0000ffffbae16720] then() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:723
+[0x0000ffffbae16580] runRouteWithinStack() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:698
+[0x0000ffffbae16410] runRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:662
+[0x0000ffffbae16390] dispatchToRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:651
