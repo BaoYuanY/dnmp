@@ -5184,3 +5184,15 @@ Stack trace:
 [22-Aug-2022 03:01:51 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
 [22-Aug-2022 03:03:11 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
 [22-Aug-2022 03:03:11 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[30-Aug-2022 11:02:46 Asia/Shanghai] PHP Fatal error:  Uncaught ReflectionException: Class think\Config does not exist in /www/kfos/vendor/topthink/framework/src/think/Container.php:375
+Stack trace:
+#0 /www/kfos/vendor/topthink/framework/src/think/Container.php(375): ReflectionClass->__construct('think\\Config')
+#1 /www/kfos/vendor/topthink/framework/src/think/Container.php(251): think\Container->invokeClass('think\\Config', Array)
+#2 /www/kfos/vendor/topthink/framework/src/think/Container.php(130): think\Container->make('think\\Config')
+#3 /www/kfos/vendor/topthink/framework/src/think/Container.php(508): think\Container->get('config')
+#4 /www/kfos/vendor/topthink/framework/src/think/App.php(511): think\Container->__get('config')
+#5 /www/kfos/vendor/topthink/framework/src/think/App.php(420): think\App->load()
+#6 /www/kfos/vendor/topthink/framework/src/think/Console.php(110): think\App->initialize()
+#7 /www/kfos/vendor/topthink/framework/src/think/Console.php(94): think\Console->initialize()
+#8 [internal function]: think\Console->__construct(Object(think\App))
+#9  in /www/kfos/vendor/topthink/framework/src/think/Container.php on line 377
