@@ -5196,3 +5196,9 @@ Stack trace:
 #7 /www/kfos/vendor/topthink/framework/src/think/Console.php(94): think\Console->initialize()
 #8 [internal function]: think\Console->__construct(Object(think\App))
 #9  in /www/kfos/vendor/topthink/framework/src/think/Container.php on line 377
+[05-Sep-2022 02:33:46 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[05-Sep-2022 02:33:46 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[05-Sep-2022 02:51:20 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[05-Sep-2022 02:51:21 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[05-Sep-2022 02:51:28 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
+[05-Sep-2022 02:51:28 UTC] PHP Warning:  Module 'redis' already loaded in Unknown on line 0
