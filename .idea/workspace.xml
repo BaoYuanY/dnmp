@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="2022-08-22">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="1623e2a1-975b-4af8-92f3-aae2cca652e2" name="更改" comment="2022-09-22  新mac">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/nginx.localhost.access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/nginx/nginx.localhost.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/nginx.localhost.error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/php/fpm.slow.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/fpm.slow.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/php/php.error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/php.error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/nginx/conf.d/livewire.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/nginx/conf.d/rms-api.conf" beforeDir="false" afterPath="$PROJECT_DIR$/services/nginx/conf.d/rms-api.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/services/php/php.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/baoyuan/git/dnmp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "web-ide.project.structure",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/baoyuan/git/dnmp/services/nginx/conf.d&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/services/nginx/conf.d" />
@@ -126,6 +132,18 @@
       <workItem from="1662345166526" duration="359000" />
       <workItem from="1662346325253" duration="46000" />
       <workItem from="1662519493348" duration="615000" />
+      <workItem from="1665209394956" duration="43000" />
+      <workItem from="1665210194250" duration="707000" />
+      <workItem from="1665623931900" duration="278000" />
+      <workItem from="1666716465850" duration="813000" />
+      <workItem from="1666717862057" duration="164000" />
+      <workItem from="1667882485449" duration="729000" />
+      <workItem from="1669605001152" duration="1530000" />
+      <workItem from="1669885771423" duration="809000" />
+      <workItem from="1670204856159" duration="38000" />
+      <workItem from="1673259629712" duration="544000" />
+      <workItem from="1676625327347" duration="1220000" />
+      <workItem from="1678679283111" duration="3360000" />
     </task>
     <task id="LOCAL-00001" summary="改了一下">
       <created>1631756980126</created>
@@ -246,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661829252836</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2022-09-22  新mac">
+      <created>1663847616768</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663847616768</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +299,7 @@
     <MESSAGE value="2022-08-22 macOs Redis重复" />
     <MESSAGE value="2022-08-22" />
     <MESSAGE value="2022-08-30  fix路由" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-08-30  fix路由" />
+    <MESSAGE value="2022-09-22  新mac" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-09-22  新mac" />
   </component>
 </project>

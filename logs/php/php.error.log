@@ -5256,3 +5256,378 @@ Stack trace:
 #9 {main}
 
 Next think\except in /www/kfos/vendor/topthink/framework/src/think/Container.php on line 377
+[24-Sep-2022 15:27:52 Asia/Shanghai] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('config')
+#1 /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('config')
+#2 /www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('config', Array)
+#5 /www/laravel/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(135): Illuminate\Foundation\Application->make('config')
+#6 /www/laravel/vendor/guangu in /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Sep-2022 15:32:13 Asia/Shanghai] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('config')
+#1 /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('config')
+#2 /www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('config', Array)
+#5 /www/laravel/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(135): Illuminate\Foundation\Application->make('config')
+#6 /www/laravel/vendor/guangu in /www/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Sep-2022 15:34:32 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'Guanguans\LaravelExceptionNotify\ExceptionNotifyServiceProvider' not found in /www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:745
+Stack trace:
+#0 /www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(679): Illuminate\Foundation\Application->resolveProvider('Guanguans\\Larav...')
+#1 /www/laravel/bootstrap/app.php(44): Illuminate\Foundation\Application->register('Guanguans\\Larav...')
+#2 /www/laravel/artisan(20): require_once('/www/laravel/bo...')
+#3 {main}
+  thrown in /www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 745
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 88080430 bytes) in /www/tiger-api/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 963
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP Stack trace:
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/artisan:0
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   2. App\Console\Kernel->handle() /www/tiger-api/artisan:37
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   3. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:129
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   4. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Application.php:94
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   5. Illuminate\Console\Application->doRun() /www/tiger-api/vendor/symfony/console/Application.php:171
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   6. Illuminate\Console\Application->doRunCommand() /www/tiger-api/vendor/symfony/console/Application.php:299
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   7. App\Console\Commands\mytest->run() /www/tiger-api/vendor/symfony/console/Application.php:1015
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   8. App\Console\Commands\mytest->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:121
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP   9. App\Console\Commands\mytest->execute() /www/tiger-api/vendor/symfony/console/Command/Command.php:298
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  10. Illuminate\Foundation\Application->call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  11. Illuminate\Container\BoundMethod::call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Container.php:653
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  12. Illuminate\Container\BoundMethod::callBoundMethod() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:37
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  13. Illuminate\Container\Util::unwrapIfClosure() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  14. Illuminate\Container\BoundMethod::Illuminate\Container\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35-37}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Util.php:40
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  15. App\Console\Commands\mytest->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  16. App\Service\OpenShop\SiteLocation\GuanyuanDataService::getShopBusinessData() /www/tiger-api/app/Console/Commands/mytest.php:53
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  17. Illuminate\Support\Facades\Facade::remember() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:187
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  18. Illuminate\Support\Facades\Facade::__callStatic() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:187
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  19. Illuminate\Cache\CacheManager->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  20. Illuminate\Cache\CacheManager->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  21. Illuminate\Cache\Repository->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php:418
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  22. App\Service\OpenShop\SiteLocation\GuanyuanDataService::App\Service\OpenShop\SiteLocation\{closure:/www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:185-187}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:391
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  23. App\Library\Guanyuan\GuanyuanTool::fetch() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:186
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  24. dd() /www/tiger-api/app/Library/Guanyuan/GuanyuanTool.php:22
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  25. Symfony\Component\VarDumper\VarDumper::dump() /www/tiger-api/vendor/symfony/var-dumper/Resources/functions/dump.php:45
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  26. Facade\Ignition\DumpRecorder\DumpRecorder->Facade\Ignition\DumpRecorder\{closure:/www/tiger-api/vendor/facade/ignition/src/DumpRecorder/DumpRecorder.php:33-35}() /www/tiger-api/vendor/symfony/var-dumper/VarDumper.php:46
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  27. Facade\Ignition\DumpRecorder\MultiDumpHandler->dump() /www/tiger-api/vendor/facade/ignition/src/DumpRecorder/DumpRecorder.php:34
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  28. Facade\Ignition\DumpRecorder\DumpRecorder->Facade\Ignition\DumpRecorder\{closure:/www/tiger-api/vendor/facade/ignition/src/DumpRecorder/DumpRecorder.php:43-45}() /www/tiger-api/vendor/facade/ignition/src/DumpRecorder/MultiDumpHandler.php:13
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  29. Facade\Ignition\DumpRecorder\DumpHandler->dump() /www/tiger-api/vendor/facade/ignition/src/DumpRecorder/DumpRecorder.php:44
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  30. Facade\Ignition\DumpRecorder\DumpRecorder->record() /www/tiger-api/vendor/facade/ignition/src/DumpRecorder/DumpHandler.php:21
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  31. Facade\Ignition\DumpRecorder\HtmlDumper->dump() /www/tiger-api/vendor/facade/ignition/src/DumpRecorder/DumpRecorder.php:61
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  32. Facade\Ignition\DumpRecorder\HtmlDumper->dump() /www/tiger-api/vendor/facade/ignition/src/DumpRecorder/HtmlDumper.php:25
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  33. Facade\Ignition\DumpRecorder\HtmlDumper->dump() /www/tiger-api/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:140
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  34. Symfony\Component\VarDumper\Cloner\Data->dump() /www/tiger-api/vendor/symfony/var-dumper/Dumper/AbstractDumper.php:137
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  35. Symfony\Component\VarDumper\Cloner\Data->dumpItem() /www/tiger-api/vendor/symfony/var-dumper/Cloner/Data.php:321
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  36. Facade\Ignition\DumpRecorder\HtmlDumper->dumpString() /www/tiger-api/vendor/symfony/var-dumper/Cloner/Data.php:418
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  37. Facade\Ignition\DumpRecorder\HtmlDumper->dumpString() /www/tiger-api/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:799
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  38. Facade\Ignition\DumpRecorder\HtmlDumper->endValue() /www/tiger-api/vendor/symfony/var-dumper/Dumper/CliDumper.php:268
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  39. Facade\Ignition\DumpRecorder\HtmlDumper->dumpLine() /www/tiger-api/vendor/symfony/var-dumper/Dumper/CliDumper.php:580
+[09-Oct-2022 15:55:43 Asia/Shanghai] PHP  40. mb_encode_numericentity() /www/tiger-api/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:963
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 27267072 bytes) in /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php on line 334
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP Stack trace:
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/artisan:0
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   2. App\Console\Kernel->handle() /www/tiger-api/artisan:37
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   3. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:129
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   4. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Application.php:94
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   5. Illuminate\Console\Application->doRun() /www/tiger-api/vendor/symfony/console/Application.php:171
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   6. Illuminate\Console\Application->doRunCommand() /www/tiger-api/vendor/symfony/console/Application.php:299
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   7. App\Console\Commands\mytest->run() /www/tiger-api/vendor/symfony/console/Application.php:1015
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   8. App\Console\Commands\mytest->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:121
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP   9. App\Console\Commands\mytest->execute() /www/tiger-api/vendor/symfony/console/Command/Command.php:298
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  10. Illuminate\Foundation\Application->call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  11. Illuminate\Container\BoundMethod::call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Container.php:653
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  12. Illuminate\Container\BoundMethod::callBoundMethod() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:37
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  13. Illuminate\Container\Util::unwrapIfClosure() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  14. Illuminate\Container\BoundMethod::Illuminate\Container\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35-37}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Util.php:40
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  15. App\Console\Commands\mytest->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  16. App\Service\OpenShop\SiteLocation\GuanyuanDataService::mallData() /www/tiger-api/app/Console/Commands/mytest.php:67
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  17. App\Service\OpenShop\SiteLocation\GuanyuanDataService::getMallData() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:160
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  18. Illuminate\Support\Facades\Facade::remember() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:194
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  19. Illuminate\Support\Facades\Facade::__callStatic() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:194
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  20. Illuminate\Cache\CacheManager->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  21. Illuminate\Cache\CacheManager->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  22. Illuminate\Cache\Repository->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php:418
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  23. Illuminate\Cache\Repository->put() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:391
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  24. Illuminate\Cache\RedisStore->put() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:213
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  25. Illuminate\Cache\RedisStore->serialize() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php:101
+[27-Oct-2022 15:45:45 Asia/Shanghai] PHP  26. serialize() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php:334
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /www/tiger-api/vendor/laravel/framework/src/Illuminate/Redis/Connections/Connection.php on line 116
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP Stack trace:
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/public/index.php:0
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   2. App\Http\Kernel->handle() /www/tiger-api/public/index.php:51
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   3. App\Http\Kernel->sendRequestThroughRouter() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:111
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   4. Illuminate\Routing\Pipeline->then() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:142
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   5. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   6. App\Http\Middleware\TrustProxies->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   7. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php:39
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   8. Fruitcake\Cors\HandleCors->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP   9. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/fruitcake/laravel-cors/src/HandleCors.php:38
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  10. App\Http\Middleware\PreventRequestsDuringMaintenance->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  11. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php:86
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  12. Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  13. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php:27
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  14. App\Http\Middleware\TrimStrings->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  15. App\Http\Middleware\TrimStrings->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php:40
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  16. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php:21
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  17. App\Http\Middleware\ApiAccessLog->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  18. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:126-132}() /www/tiger-api/app/Http/Middleware/ApiAccessLog.php:24
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  19. App\Http\Kernel->Illuminate\Foundation\Http\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:164-168}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  20. Illuminate\Routing\Router->dispatch() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  21. Illuminate\Routing\Router->dispatchToRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:651
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  22. Illuminate\Routing\Router->runRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:662
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  23. Illuminate\Routing\Router->runRouteWithinStack() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:698
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  24. Illuminate\Routing\Pipeline->then() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:723
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  25. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  26. App\Http\Middleware\OpenShop\AppletAuth->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  27. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:126-132}() /www/tiger-api/app/Http/Middleware/OpenShop/AppletAuth.php:106
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  28. Illuminate\Routing\Router->Illuminate\Routing\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:719-723}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  29. Illuminate\Routing\Route->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:721
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  30. Illuminate\Routing\Route->runController() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  31. Illuminate\Routing\ControllerDispatcher->dispatch() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php:262
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  32. App\Http\Controllers\OpenShop\Feishu\SelectionController->callAction() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:45
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  33. App\Http\Controllers\OpenShop\Feishu\SelectionController->mapLists() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  34. App\Service\OpenShop\Feishu\MapService::getMapData() /www/tiger-api/app/Http/Controllers/OpenShop/Feishu/SelectionController.php:209
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  35. App\Service\OpenShop\Feishu\MapService::mapDataList() /www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:132
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  36. App\Service\OpenShop\SiteLocation\GuanyuanDataService::newShopList() /www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:646
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  37. Illuminate\Support\Facades\Facade::remember() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:383
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  38. Illuminate\Support\Facades\Facade::__callStatic() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:383
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  39. Illuminate\Cache\CacheManager->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  40. Illuminate\Cache\CacheManager->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  41. Illuminate\Cache\Repository->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php:418
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  42. Illuminate\Cache\Repository->get() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:382
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  43. Illuminate\Cache\RedisStore->get() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:97
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  44. Illuminate\Redis\Connections\PhpRedisConnection->get() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php:62
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  45. Illuminate\Redis\Connections\PhpRedisConnection->command() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php:56
+[09-Jan-2023 10:45:35 Asia/Shanghai] PHP  46. Illuminate\Redis\Connections\PhpRedisConnection->command() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php:533
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /www/tiger-api/vendor/laravel/framework/src/Illuminate/Redis/Connections/Connection.php on line 116
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP Stack trace:
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/public/index.php:0
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   2. App\Http\Kernel->handle() /www/tiger-api/public/index.php:51
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   3. App\Http\Kernel->sendRequestThroughRouter() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:111
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   4. Illuminate\Routing\Pipeline->then() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:142
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   5. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   6. App\Http\Middleware\TrustProxies->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   7. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php:39
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   8. Fruitcake\Cors\HandleCors->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP   9. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/fruitcake/laravel-cors/src/HandleCors.php:38
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  10. App\Http\Middleware\PreventRequestsDuringMaintenance->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  11. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php:86
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  12. Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  13. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php:27
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  14. App\Http\Middleware\TrimStrings->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  15. App\Http\Middleware\TrimStrings->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php:40
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  16. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php:21
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  17. App\Http\Middleware\ApiAccessLog->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  18. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:126-132}() /www/tiger-api/app/Http/Middleware/ApiAccessLog.php:24
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  19. App\Http\Kernel->Illuminate\Foundation\Http\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:164-168}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  20. Illuminate\Routing\Router->dispatch() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  21. Illuminate\Routing\Router->dispatchToRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:651
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  22. Illuminate\Routing\Router->runRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:662
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  23. Illuminate\Routing\Router->runRouteWithinStack() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:698
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  24. Illuminate\Routing\Pipeline->then() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:723
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  25. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  26. App\Http\Middleware\OpenShop\FeishuWebAuth->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  27. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/app/Http/Middleware/OpenShop/FeishuWebAuth.php:47
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  28. App\Http\Middleware\OpenShop\UserPermissionAuth->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  29. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:126-132}() /www/tiger-api/app/Http/Middleware/OpenShop/UserPermissionAuth.php:69
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  30. Illuminate\Routing\Router->Illuminate\Routing\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:719-723}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  31. Illuminate\Routing\Route->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:721
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  32. Illuminate\Routing\Route->runController() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  33. Illuminate\Routing\ControllerDispatcher->dispatch() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php:262
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  34. App\Http\Controllers\OpenShop\Feishu\SelectionController->callAction() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:45
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  35. App\Http\Controllers\OpenShop\Feishu\SelectionController->mapLists() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  36. App\Service\OpenShop\Feishu\MapService::getMapData() /www/tiger-api/app/Http/Controllers/OpenShop/Feishu/SelectionController.php:209
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  37. App\Service\OpenShop\Feishu\MapService::mapDataList() /www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:134
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  38. App\Service\OpenShop\SiteLocation\GuanyuanDataService::newShopList() /www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:648
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  39. Illuminate\Support\Facades\Facade::remember() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:383
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  40. Illuminate\Support\Facades\Facade::__callStatic() /www/tiger-api/app/Service/OpenShop/SiteLocation/GuanyuanDataService.php:383
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  41. Illuminate\Cache\CacheManager->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  42. Illuminate\Cache\CacheManager->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:261
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  43. Illuminate\Cache\Repository->remember() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php:418
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  44. Illuminate\Cache\Repository->get() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:382
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  45. Illuminate\Cache\RedisStore->get() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:97
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  46. Illuminate\Redis\Connections\PhpRedisConnection->get() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php:62
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  47. Illuminate\Redis\Connections\PhpRedisConnection->command() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php:56
+[09-Jan-2023 15:03:49 Asia/Shanghai] PHP  48. Illuminate\Redis\Connections\PhpRedisConnection->command() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Redis/Connections/PhpRedisConnection.php:533
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 705
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP Stack trace:
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/public/index.php:0
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   2. App\Http\Kernel->handle() /www/tiger-api/public/index.php:51
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   3. App\Http\Kernel->sendRequestThroughRouter() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:111
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   4. Illuminate\Routing\Pipeline->then() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:142
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   5. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   6. App\Http\Middleware\TrustProxies->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   7. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php:39
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   8. Fruitcake\Cors\HandleCors->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP   9. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/fruitcake/laravel-cors/src/HandleCors.php:38
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  10. App\Http\Middleware\PreventRequestsDuringMaintenance->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  11. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php:86
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  12. Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  13. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php:27
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  14. App\Http\Middleware\TrimStrings->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  15. App\Http\Middleware\TrimStrings->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php:40
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  16. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php:21
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  17. App\Http\Middleware\ApiAccessLog->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  18. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:126-132}() /www/tiger-api/app/Http/Middleware/ApiAccessLog.php:24
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  19. App\Http\Kernel->Illuminate\Foundation\Http\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:164-168}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  20. Illuminate\Routing\Router->dispatch() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  21. Illuminate\Routing\Router->dispatchToRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:651
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  22. Illuminate\Routing\Router->runRoute() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:662
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  23. Illuminate\Routing\Router->runRouteWithinStack() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:698
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  24. Illuminate\Routing\Pipeline->then() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:723
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  25. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  26. App\Http\Middleware\OpenShop\FeishuWebAuth->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  27. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:143-174}() /www/tiger-api/app/Http/Middleware/OpenShop/FeishuWebAuth.php:47
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  28. App\Http\Middleware\OpenShop\UserPermissionAuth->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  29. Illuminate\Routing\Pipeline->Illuminate\Pipeline\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:126-132}() /www/tiger-api/app/Http/Middleware/OpenShop/UserPermissionAuth.php:69
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  30. Illuminate\Routing\Router->Illuminate\Routing\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:719-723}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  31. Illuminate\Routing\Route->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php:721
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  32. Illuminate\Routing\Route->runController() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  33. Illuminate\Routing\ControllerDispatcher->dispatch() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php:262
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  34. App\Http\Controllers\OpenShop\Feishu\SelectionController->callAction() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:45
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  35. App\Http\Controllers\OpenShop\Feishu\SelectionController->mapLists() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  36. App\Service\OpenShop\Feishu\MapService::getMapData() /www/tiger-api/app/Http/Controllers/OpenShop/Feishu/SelectionController.php:209
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  37. App\Service\OpenShop\Feishu\MapService::mapDataList() /www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:134
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  38. Illuminate\Cache\RedisTaggedCache->rememberForever() /www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:730
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  39. App\Service\OpenShop\Feishu\MapService::App\Service\OpenShop\Feishu\{closure:/www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:715-730}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Cache/Repository.php:426
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  40. Illuminate\Database\Eloquent\Builder->get() /www/tiger-api/app/Service/OpenShop/Feishu/MapService.php:728
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  41. Illuminate\Database\Eloquent\Builder->getModels() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:609
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  42. Illuminate\Database\Query\Builder->get() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  43. Illuminate\Database\Query\Builder->onceWithColumns() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2403
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  44. Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2401-2403}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2936
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  45. Illuminate\Database\Query\Builder->runSelect() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2402
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  46. Illuminate\Database\MySqlConnection->select() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:2414
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  47. Illuminate\Database\MySqlConnection->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:376
+[09-Jan-2023 16:22:25 Asia/Shanghai] PHP  48. Illuminate\Database\MySqlConnection->runQueryCallback() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:672
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 496
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP Stack trace:
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/artisan:0
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   2. App\Console\Kernel->handle() /www/tiger-api/artisan:37
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   3. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:129
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   4. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Application.php:94
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   5. Illuminate\Console\Application->doRun() /www/tiger-api/vendor/symfony/console/Application.php:171
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   6. Illuminate\Console\Application->doRunCommand() /www/tiger-api/vendor/symfony/console/Application.php:299
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   7. App\Console\Commands\mytest->run() /www/tiger-api/vendor/symfony/console/Application.php:1015
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   8. App\Console\Commands\mytest->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:121
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   9. App\Console\Commands\mytest->execute() /www/tiger-api/vendor/symfony/console/Command/Command.php:298
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  10. Illuminate\Foundation\Application->call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  11. Illuminate\Container\BoundMethod::call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Container.php:653
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  12. Illuminate\Container\BoundMethod::callBoundMethod() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:37
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  13. Illuminate\Container\Util::unwrapIfClosure() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  14. Illuminate\Container\BoundMethod::Illuminate\Container\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35-37}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Util.php:40
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  15. App\Console\Commands\mytest->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  16. Illuminate\Database\Eloquent\Builder->get() /www/tiger-api/app/Console/Commands/mytest.php:123
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  17. Illuminate\Database\Eloquent\Builder->getModels() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:609
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  18. App\Models\Common\CityResidencePriceModel->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  19. App\Models\Common\CityResidencePriceModel->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  20. App\Models\Common\CityResidencePriceModel->forwardCallTo() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:2132
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  21. Illuminate\Database\Eloquent\Builder->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  22. array_map() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  23. Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362-370}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  24. App\Models\Common\CityResidencePriceModel->newFromBuilder() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:363
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  25. App\Models\Common\CityResidencePriceModel->newInstance() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:520
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /www/tiger-api/vendor/symfony/error-handler/Error/FatalError.php on line 1
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP Stack trace:
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/artisan:0
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   2. App\Console\Kernel->handle() /www/tiger-api/artisan:37
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   3. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:129
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   4. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Application.php:94
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   5. Illuminate\Console\Application->doRun() /www/tiger-api/vendor/symfony/console/Application.php:171
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   6. Illuminate\Console\Application->doRunCommand() /www/tiger-api/vendor/symfony/console/Application.php:299
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   7. App\Console\Commands\mytest->run() /www/tiger-api/vendor/symfony/console/Application.php:1015
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   8. App\Console\Commands\mytest->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:121
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP   9. App\Console\Commands\mytest->execute() /www/tiger-api/vendor/symfony/console/Command/Command.php:298
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  10. Illuminate\Foundation\Application->call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  11. Illuminate\Container\BoundMethod::call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Container.php:653
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  12. Illuminate\Container\BoundMethod::callBoundMethod() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:37
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  13. Illuminate\Container\Util::unwrapIfClosure() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  14. Illuminate\Container\BoundMethod::Illuminate\Container\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35-37}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Util.php:40
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  15. App\Console\Commands\mytest->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  16. Illuminate\Database\Eloquent\Builder->get() /www/tiger-api/app/Console/Commands/mytest.php:123
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  17. Illuminate\Database\Eloquent\Builder->getModels() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:609
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  18. App\Models\Common\CityResidencePriceModel->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  19. App\Models\Common\CityResidencePriceModel->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  20. App\Models\Common\CityResidencePriceModel->forwardCallTo() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:2132
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  21. Illuminate\Database\Eloquent\Builder->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  22. array_map() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  23. Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362-370}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  24. App\Models\Common\CityResidencePriceModel->newFromBuilder() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:363
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  25. App\Models\Common\CityResidencePriceModel->newInstance() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:520
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  26. Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:0
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  27. Illuminate\Foundation\Bootstrap\HandleExceptions->fatalErrorFromPhpError() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:207
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  28. spl_autoload_call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:220
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  29. Composer\Autoload\ClassLoader->loadClass() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:220
+[11-Jan-2023 11:25:23 Asia/Shanghai] PHP  30. Composer\Autoload\includeFile() /www/tiger-api/vendor/composer/ClassLoader.php:428
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 496
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP Stack trace:
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/artisan:0
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   2. App\Console\Kernel->handle() /www/tiger-api/artisan:37
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   3. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:129
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   4. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Application.php:94
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   5. Illuminate\Console\Application->doRun() /www/tiger-api/vendor/symfony/console/Application.php:171
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   6. Illuminate\Console\Application->doRunCommand() /www/tiger-api/vendor/symfony/console/Application.php:299
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   7. App\Console\Commands\mytest->run() /www/tiger-api/vendor/symfony/console/Application.php:1015
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   8. App\Console\Commands\mytest->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:121
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   9. App\Console\Commands\mytest->execute() /www/tiger-api/vendor/symfony/console/Command/Command.php:298
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  10. Illuminate\Foundation\Application->call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  11. Illuminate\Container\BoundMethod::call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Container.php:653
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  12. Illuminate\Container\BoundMethod::callBoundMethod() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:37
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  13. Illuminate\Container\Util::unwrapIfClosure() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  14. Illuminate\Container\BoundMethod::Illuminate\Container\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35-37}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Util.php:40
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  15. App\Console\Commands\mytest->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  16. Illuminate\Database\Eloquent\Builder->get() /www/tiger-api/app/Console/Commands/mytest.php:122
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  17. Illuminate\Database\Eloquent\Builder->getModels() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:609
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  18. App\Models\Common\CityResidencePriceModel->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  19. App\Models\Common\CityResidencePriceModel->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  20. App\Models\Common\CityResidencePriceModel->forwardCallTo() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:2132
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  21. Illuminate\Database\Eloquent\Builder->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  22. array_map() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  23. Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362-370}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  24. App\Models\Common\CityResidencePriceModel->newFromBuilder() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:363
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  25. App\Models\Common\CityResidencePriceModel->newInstance() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:520
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /www/tiger-api/vendor/symfony/error-handler/Error/FatalError.php on line 1
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP Stack trace:
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   1. {main}() /www/tiger-api/artisan:0
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   2. App\Console\Kernel->handle() /www/tiger-api/artisan:37
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   3. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:129
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   4. Illuminate\Console\Application->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Application.php:94
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   5. Illuminate\Console\Application->doRun() /www/tiger-api/vendor/symfony/console/Application.php:171
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   6. Illuminate\Console\Application->doRunCommand() /www/tiger-api/vendor/symfony/console/Application.php:299
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   7. App\Console\Commands\mytest->run() /www/tiger-api/vendor/symfony/console/Application.php:1015
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   8. App\Console\Commands\mytest->run() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:121
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP   9. App\Console\Commands\mytest->execute() /www/tiger-api/vendor/symfony/console/Command/Command.php:298
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  10. Illuminate\Foundation\Application->call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  11. Illuminate\Container\BoundMethod::call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Container.php:653
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  12. Illuminate\Container\BoundMethod::callBoundMethod() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:37
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  13. Illuminate\Container\Util::unwrapIfClosure() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  14. Illuminate\Container\BoundMethod::Illuminate\Container\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35-37}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/Util.php:40
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  15. App\Console\Commands\mytest->handle() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  16. Illuminate\Database\Eloquent\Builder->get() /www/tiger-api/app/Console/Commands/mytest.php:122
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  17. Illuminate\Database\Eloquent\Builder->getModels() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:609
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  18. App\Models\Common\CityResidencePriceModel->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  19. App\Models\Common\CityResidencePriceModel->__call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:625
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  20. App\Models\Common\CityResidencePriceModel->forwardCallTo() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:2132
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  21. Illuminate\Database\Eloquent\Builder->hydrate() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  22. array_map() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  23. Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure:/www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362-370}() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:362
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  24. App\Models\Common\CityResidencePriceModel->newFromBuilder() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:363
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  25. App\Models\Common\CityResidencePriceModel->newInstance() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:520
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  26. Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:0
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  27. Illuminate\Foundation\Bootstrap\HandleExceptions->fatalErrorFromPhpError() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:207
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  28. spl_autoload_call() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:220
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  29. Composer\Autoload\ClassLoader->loadClass() /www/tiger-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php:220
+[11-Jan-2023 11:25:59 Asia/Shanghai] PHP  30. Composer\Autoload\includeFile() /www/tiger-api/vendor/composer/ClassLoader.php:428
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP Warning:  include(/www/guanyuan/vendor/autoload.php): failed to open stream: No such file or directory in /www/guanyuan/boot/load.php on line 5
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP Stack trace:
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP   1. {main}() /www/guanyuan/bin/weather_synchro:0
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP   2. include_once() /www/guanyuan/bin/weather_synchro:4
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP Warning:  include(): Failed opening '/www/guanyuan/vendor/autoload.php' for inclusion (include_path='.:/usr/local/lib/php') in /www/guanyuan/boot/load.php on line 5
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP Stack trace:
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP   1. {main}() /www/guanyuan/bin/weather_synchro:0
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP   2. include_once() /www/guanyuan/bin/weather_synchro:4
+[29-Jan-2023 17:44:54 Asia/Shanghai] PHP Fatal error:  Uncaught Error: Class 'Dotenv\Dotenv' not found in /www/guanyuan/boot/load.php:7
+Stack trace:
+#0 /www/guanyuan/bin/weather_synchro(4): include_once()
+#1 {main}
+  thrown in /www/guanyuan/boot/load.php on line 7
+[11-Feb-2023 10:27:10 Asia/Shanghai] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0
