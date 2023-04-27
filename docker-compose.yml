@@ -160,6 +160,42 @@ services:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_ROOT_HOST: "%"
       TZ: "$TZ"
+
+#  clickhouseMac:
+#    image: clickhouse/clickhouse-server:23.4.1-alpine
+#    container_name: clickhouseMac
+#    ports:
+#      - "8124:8123"
+#    volumes:
+#      - ./data/clickhouse:/var/lib/clickhouse/
+#      - ./logs/clickhouse:/var/log/clickhouse-server/
+#      - ./services/clickhouse/config:/etc/clickhouse-server/config.d/
+#      - ./services/clickhouse/users:/etc/clickhouse-server/users.d/
+#      - ./services/clickhouse/initdb:/docker-entrypoint-initdb.d/
+#    restart: always
+#    networks:
+#      - default
+#    environment:
+#      CLICKHOUSE_DB: "default"
+#      CLICKHOUSE_USER: "default"
+#      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+#      CLICKHOUSE_PASSWORD: "8wqjXH0efnQiVDU6"
+#      TZ: "$TZ"
+
+
+  clickhouse:
+    image: docker.io/bitnami/clickhouse:22
+    container_name: clickhouse
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - CLICKHOUSE_ADMIN_PASSWORD=clickhousepassword
+    ports:
+      - '8123:8123'
+    volumes:
+      - ./clickhouse_data:/bitnami/clickhouse
+
+
+
 #  mysql5:
 #    image: mysql:${MYSQL5_VERSION}
 #    container_name: mysql5
@@ -397,3 +433,9 @@ services:
 
 networks:
   default:
+
+
+volumes:
+  clickhouse_data:
+    driver: local
+

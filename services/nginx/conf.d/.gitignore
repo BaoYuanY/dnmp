@@ -2,3 +2,5 @@
 !.gitignore
 !certs/localhost/
 !rms-api.conf
+!thinkphp.conf
+!yby.conf
