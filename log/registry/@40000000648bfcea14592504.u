@@ -1,0 +1,12 @@
+2023-06-16_02:17:55.21957 2023/06/16 02:17:55 maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+2023-06-16_02:17:55.23403 time="2023-06-16T02:17:55.233Z" level=info msg="storage backend redirection enabled" environment=production go_version=go1.19.8 instance_id=305d5e6b-c281-45fb-b7cf-9ead8a5a2c35 service=registry version=v3.72.0-gitlab
+2023-06-16_02:17:55.23405 time="2023-06-16T02:17:55.233Z" level=info msg="using inmemory blob descriptor cache" environment=production go_version=go1.19.8 instance_id=305d5e6b-c281-45fb-b7cf-9ead8a5a2c35 service=registry version=v3.72.0-gitlab
+2023-06-16_02:17:55.23405 time="2023-06-16T02:17:55.233Z" level=info msg="listening on 127.0.0.1:5000" environment=production go_version=go1.19.8 instance_id=305d5e6b-c281-45fb-b7cf-9ead8a5a2c35 service=registry version=v3.72.0-gitlab
+2023-06-16_02:17:55.23445 time="2023-06-16T02:17:55.234Z" level=info msg="Starting upload purge in 25m0s" environment=production go_version=go1.19.8 instance_id=305d5e6b-c281-45fb-b7cf-9ead8a5a2c35 service=registry version=v3.72.0-gitlab
+2023-06-16_02:19:28.52488 time="2023-06-16T02:19:28.524Z" level=info msg="attempting to stop server gracefully..." database_drain_timeout=0s http_drain_timeout=0s quit_signal=terminated
+2023-06-16_02:19:28.52498 time="2023-06-16T02:19:28.524Z" level=info msg="graceful shutdown successful" database_drain_timeout=0s http_drain_timeout=0s quit_signal=terminated
+2023-06-16_02:19:28.57027 2023/06/16 02:19:28 maxprocs: Leaving GOMAXPROCS=2: CPU quota undefined
+2023-06-16_02:19:28.57257 time="2023-06-16T02:19:28.572Z" level=info msg="storage backend redirection enabled" environment=production go_version=go1.19.8 instance_id=7828f3b1-3441-4d52-bfc1-ed3ea8815b92 service=registry version=v3.72.0-gitlab
+2023-06-16_02:19:28.57258 time="2023-06-16T02:19:28.572Z" level=info msg="using inmemory blob descriptor cache" environment=production go_version=go1.19.8 instance_id=7828f3b1-3441-4d52-bfc1-ed3ea8815b92 service=registry version=v3.72.0-gitlab
+2023-06-16_02:19:28.57278 time="2023-06-16T02:19:28.572Z" level=info msg="Starting upload purge in 28m0s" environment=production go_version=go1.19.8 instance_id=7828f3b1-3441-4d52-bfc1-ed3ea8815b92 service=registry version=v3.72.0-gitlab
+2023-06-16_02:19:28.57304 time="2023-06-16T02:19:28.572Z" level=info msg="listening on 127.0.0.1:5000" environment=production go_version=go1.19.8 instance_id=7828f3b1-3441-4d52-bfc1-ed3ea8815b92 service=registry version=v3.72.0-gitlab

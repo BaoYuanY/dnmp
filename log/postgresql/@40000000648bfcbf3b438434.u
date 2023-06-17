@@ -1,0 +1,28 @@
+2023-06-16_03:43:13.75022 LOG:  starting PostgreSQL 13.8 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
+2023-06-16_03:43:13.75364 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2023-06-16_03:43:13.78390 LOG:  database system was interrupted; last known up at 2023-06-16 03:39:09 GMT
+2023-06-16_03:43:15.11412 LOG:  database system was not properly shut down; automatic recovery in progress
+2023-06-16_03:43:15.11419 LOG:  invalid record length at 0/61733B8: wanted 24, got 0
+2023-06-16_03:43:15.11419 LOG:  redo is not required
+2023-06-16_03:43:15.11419 LOG:  database system is ready to accept connections
+2023-06-16_03:43:16.60031 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2023-06-16_03:43:16.60037 FATAL:  Peer authentication failed for user "gitlab"
+2023-06-16_03:43:16.60037 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2023-06-16_03:43:16.60038 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2023-06-16_03:43:16.60038 FATAL:  Peer authentication failed for user "gitlab"
+2023-06-16_03:43:16.60038 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2023-06-16_03:43:16.60039 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2023-06-16_03:43:16.60039 FATAL:  Peer authentication failed for user "gitlab"
+2023-06-16_03:43:16.60039 DETAIL:  Connection matched pg_hba.conf line 70: "local   all         all                               peer map=gitlab"
+2023-06-16_05:23:16.63809 ERROR:  duplicate key value violates unique constraint "index_ghost_user_migrations_on_user_id"
+2023-06-16_05:23:16.63810 DETAIL:  Key (user_id)=(34) already exists.
+2023-06-16_05:23:16.63811 STATEMENT:  /*application:sidekiq,correlation_id:01H31AGREV3NVDYSP89RMN6D8N,jid:6b7eb725bc2a98b0fde2210e,endpoint_id:DeleteUserWorker,db_config_name:main*/ INSERT INTO "ghost_user_migrations" ("user_id", "initiator_user_id", "created_at", "updated_at", "hard_delete") VALUES (34, 1, '2023-06-16 05:23:16.619802', '2023-06-16 05:23:16.619802', TRUE) RETURNING "id"
+2023-06-16_05:23:30.69776 ERROR:  duplicate key value violates unique constraint "index_ghost_user_migrations_on_user_id"
+2023-06-16_05:23:30.69778 DETAIL:  Key (user_id)=(34) already exists.
+2023-06-16_05:23:30.69778 STATEMENT:  /*application:sidekiq,correlation_id:01H31AH7KY89CT7E8A2WG9X9CS,jid:06e0901f8cb2d854996ad5fe,endpoint_id:DeleteUserWorker,db_config_name:main*/ INSERT INTO "ghost_user_migrations" ("user_id", "initiator_user_id", "created_at", "updated_at") VALUES (34, 1, '2023-06-16 05:23:30.696374', '2023-06-16 05:23:30.696374') RETURNING "id"
+2023-06-16_05:23:37.91301 ERROR:  duplicate key value violates unique constraint "index_ghost_user_migrations_on_user_id"
+2023-06-16_05:23:37.91303 DETAIL:  Key (user_id)=(34) already exists.
+2023-06-16_05:23:37.91303 STATEMENT:  /*application:sidekiq,correlation_id:47bf1e5715695605b214c325af874c6b,jid:6b7eb725bc2a98b0fde2210e,endpoint_id:DeleteUserWorker,db_config_name:main*/ INSERT INTO "ghost_user_migrations" ("user_id", "initiator_user_id", "created_at", "updated_at", "hard_delete") VALUES (34, 1, '2023-06-16 05:23:37.911932', '2023-06-16 05:23:37.911932', TRUE) RETURNING "id"
+2023-06-16_05:23:56.07047 ERROR:  duplicate key value violates unique constraint "index_ghost_user_migrations_on_user_id"
+2023-06-16_05:23:56.07049 DETAIL:  Key (user_id)=(34) already exists.
+2023-06-16_05:23:56.07050 STATEMENT:  /*application:sidekiq,correlation_id:dd6e6f74e4dc4101243cc36917cea176,jid:06e0901f8cb2d854996ad5fe,endpoint_id:DeleteUserWorker,db_config_name:main*/ INSERT INTO "ghost_user_migrations" ("user_id", "initiator_user_id", "created_at", "updated_at") VALUES (34, 1, '2023-06-16 05:23:56.069303', '2023-06-16 05:23:56.069303') RETURNING "id"

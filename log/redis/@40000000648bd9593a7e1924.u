@@ -1,0 +1,31 @@
+2023-06-16_03:34:18.88067 323:C 16 Jun 2023 03:34:18.876 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2023-06-16_03:34:18.88080 323:C 16 Jun 2023 03:34:18.876 # Redis version=6.2.11, bits=64, commit=720ea82e, modified=1, pid=323, just started
+2023-06-16_03:34:18.88080 323:C 16 Jun 2023 03:34:18.876 # Configuration loaded
+2023-06-16_03:34:18.88081 323:M 16 Jun 2023 03:34:18.876 * monotonic clock: POSIX clock_gettime
+2023-06-16_03:34:18.88081                 _._                                                  
+2023-06-16_03:34:18.88082            _.-``__ ''-._                                             
+2023-06-16_03:34:18.88082       _.-``    `.  `_.  ''-._           Redis 6.2.11 (720ea82e/1) 64 bit
+2023-06-16_03:34:18.88082   .-`` .-```.  ```\/    _.,_ ''-._                                  
+2023-06-16_03:34:18.88083  (    '      ,       .-`  | `,    )     Running in standalone mode
+2023-06-16_03:34:18.88083  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 0
+2023-06-16_03:34:18.88084  |    `-._   `._    /     _.-'    |     PID: 323
+2023-06-16_03:34:18.88084   `-._    `-._  `-./  _.-'    _.-'                                   
+2023-06-16_03:34:18.88085  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2023-06-16_03:34:18.88085  |    `-._`-._        _.-'_.-'    |           https://redis.io       
+2023-06-16_03:34:18.88085   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2023-06-16_03:34:18.88088  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2023-06-16_03:34:18.88088  |    `-._`-._        _.-'_.-'    |                                  
+2023-06-16_03:34:18.88089   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2023-06-16_03:34:18.88089       `-._    `-.__.-'    _.-'                                       
+2023-06-16_03:34:18.88090           `-._        _.-'                                           
+2023-06-16_03:34:18.88090               `-.__.-'                                               
+2023-06-16_03:34:18.88091 
+2023-06-16_03:34:18.88091 323:M 16 Jun 2023 03:34:18.877 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+2023-06-16_03:34:18.88092 323:M 16 Jun 2023 03:34:18.877 # Server initialized
+2023-06-16_03:34:18.88092 323:M 16 Jun 2023 03:34:18.877 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2023-06-16_03:34:18.91694 323:M 16 Jun 2023 03:34:18.916 * Loading RDB produced by version 6.2.6
+2023-06-16_03:34:18.91696 323:M 16 Jun 2023 03:34:18.916 * RDB age 332 seconds
+2023-06-16_03:34:18.91696 323:M 16 Jun 2023 03:34:18.916 * RDB memory usage when created 0.77 Mb
+2023-06-16_03:34:18.91697 323:M 16 Jun 2023 03:34:18.916 # Done loading RDB, keys loaded: 0, keys expired: 0.
+2023-06-16_03:34:18.91697 323:M 16 Jun 2023 03:34:18.916 * DB loaded from disk: 0.000 seconds
+2023-06-16_03:34:18.91697 323:M 16 Jun 2023 03:34:18.916 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket

@@ -13,6 +13,8 @@ default-authentication-plugin   = mysql_native_password
 character-set-server    = utf8mb4
 collation-server        = utf8mb4_unicode_ci
 init_connect            = 'SET NAMES utf8mb4'
+bind-address            = 0.0.0.0
+
 
 disable-log-bin
 skip-character-set-client-handshake

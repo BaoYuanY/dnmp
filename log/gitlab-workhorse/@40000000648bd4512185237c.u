@@ -1,0 +1,27 @@
+configFile: open config.toml: no such file or directory
+configFile: open config.toml: no such file or directory
+{"build_time":"20230522.193131","level":"info","msg":"Starting","time":"2023-06-16T02:17:35Z","version":"v16.0.1-ee"}
+{"address":"localhost:9229","level":"info","msg":"Running metrics server","network":"tcp","time":"2023-06-16T02:17:35Z"}
+{"level":"info","msg":"keywatcher: starting process loop","time":"2023-06-16T02:17:35Z"}
+{"address":"/var/opt/gitlab/redis/redis.socket","level":"info","msg":"redis: dialing","network":"unix","time":"2023-06-16T02:17:35Z"}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:17:35Z","uri":""}
+{"address":"/var/opt/gitlab/gitlab-workhorse/sockets/socket","level":"info","msg":"Running upstream server","network":"unix","time":"2023-06-16T02:17:35Z"}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:17:45Z","uri":""}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:17:55Z","uri":""}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:18:05Z","uri":""}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:18:15Z","uri":""}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:18:25Z","uri":""}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:18:35Z","uri":""}
+{"error":"keywatcher: pubsub receive: EOF","level":"error","msg":"","time":"2023-06-16T02:18:36Z"}
+{"address":"/var/opt/gitlab/redis/redis.socket","level":"info","msg":"redis: dialing","network":"unix","time":"2023-06-16T02:18:36Z"}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:18:45Z","uri":""}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:18:55Z","uri":""}
+{"correlation_id":"","duration_ms":0,"error":"badgateway: failed to receive response: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: no such file or directory","level":"error","method":"GET","msg":"","time":"2023-06-16T02:19:05Z","uri":""}
+{"level":"info","msg":"shutdown initiated","shutdown_timeout_s":0,"signal":"terminated","time":"2023-06-16T02:19:28Z"}
+{"level":"info","msg":"keywatcher: shutting down","time":"2023-06-16T02:19:28Z"}
+{"error":null,"level":"fatal","msg":"shutting down","time":"2023-06-16T02:19:28Z"}
+{"build_time":"20230522.193131","level":"info","msg":"Starting","time":"2023-06-16T02:19:28Z","version":"v16.0.1-ee"}
+{"address":"localhost:9229","level":"info","msg":"Running metrics server","network":"tcp","time":"2023-06-16T02:19:28Z"}
+{"level":"info","msg":"keywatcher: starting process loop","time":"2023-06-16T02:19:28Z"}
+{"address":"/var/opt/gitlab/redis/redis.socket","level":"info","msg":"redis: dialing","network":"unix","time":"2023-06-16T02:19:28Z"}
+{"address":"/var/opt/gitlab/gitlab-workhorse/sockets/socket","level":"info","msg":"Running upstream server","network":"unix","time":"2023-06-16T02:19:28Z"}

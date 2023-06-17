@@ -19,6 +19,7 @@ services:
       - ${NGINX_FASTCGI_PHP_CONF}:/etc/nginx/fastcgi-php.conf:ro
       - ${NGINX_FASTCGI_PARAMS}:/etc/nginx/fastcgi_params:ro
       - ${NGINX_LOG_DIR}:/var/log/nginx/:rw
+      - ./etc/:/data/gitlab/etc:ro
     environment:
       TZ: "$TZ"
     restart: always
@@ -146,7 +147,7 @@ services:
   #      - default
 
   mysql:
-    image: mysql/mysql-server:8.0-aarch64
+    image: mysql/mysql-server:8.0
     container_name: mysql
     ports:
       - "${MYSQL_HOST_PORT}:3306"
@@ -393,6 +394,26 @@ services:
 #      - SYS_PTRACE
 #    networks:
 #      - default
+
+  gitlab:
+    image: 'gitlab/gitlab-ee:16.0.1-ee.0'
+    restart: 'no'
+    hostname: 'gitlab.yangbaoyuan.cn'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'https://gitlab.yangbaoyuan.cn'
+      GITLAB_SKIP_UNMIGRATED_DATA_CHECK: 'true'
+    ports:
+      - '22:22'
+      - '88:80'
+      - '8443:443'
+    container_name: gitlab
+    volumes:
+      - ./data:/var/opt/gitlab/:rw
+      - ./etc:/etc/gitlab/:rw
+      - ./log:/var/log/gitlab/:rw
+    shm_size: '2000m'
+
 
 networks:
   default:

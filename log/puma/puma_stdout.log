@@ -1,0 +1,9 @@
+{"timestamp":"2023-06-17T00:39:15.963Z","pid":329,"message":"- Worker 0 (PID: 12662) booted in 0.69s, phase: 0"}
+{"timestamp":"2023-06-17T04:25:17.244Z","pid":329,"message":"- Worker 0 (PID: 19016) booted in 0.91s, phase: 0"}
+{"timestamp":"2023-06-17T04:50:17.472Z","pid":329,"message":"- Worker 1 (PID: 19677) booted in 0.74s, phase: 0"}
+{"timestamp":"2023-06-17T07:29:18.372Z","pid":329,"message":"- Worker 1 (PID: 23548) booted in 0.6s, phase: 0"}
+{"timestamp":"2023-06-17T08:11:18.478Z","pid":329,"message":"- Worker 0 (PID: 24822) booted in 0.87s, phase: 0"}
+{"timestamp":"2023-06-17T09:58:19.522Z","pid":329,"message":"- Worker 0 (PID: 27433) booted in 0.75s, phase: 0"}
+{"timestamp":"2023-06-17T11:09:19.359Z","pid":329,"message":"- Worker 1 (PID: 29328) booted in 0.61s, phase: 0"}
+{"timestamp":"2023-06-17T14:33:20.686Z","pid":329,"message":"- Worker 0 (PID: 3232) booted in 0.84s, phase: 0"}
+{"timestamp":"2023-06-17T16:41:20.337Z","pid":329,"message":"- Worker 1 (PID: 8960) booted in 0.61s, phase: 0"}

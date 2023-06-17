@@ -1,0 +1,14 @@
+WARNING: Logging audit events without an event type definition will be deprecated soon.
+See https://docs.gitlab.com/ee/development/audit_event_guide/#event-type-definitions
+  Rendered layout layouts/notify.html.haml (Duration: 60.5ms | Allocations: 28523)
+  Rendered layout layouts/notify.text.erb (Duration: 5.2ms | Allocations: 1465)
+Delivered mail 648de410b01e4_1935313875674@gitlab.yangbaoyuan.cn.mail (8.1ms)
+  Rendered layout layouts/notify.html.haml (Duration: 3.3ms | Allocations: 1380)
+  Rendered layout layouts/notify.text.erb (Duration: 1.2ms | Allocations: 619)
+Delivered mail 648de424c1c79_1935de3075825@gitlab.yangbaoyuan.cn.mail (4.3ms)
+  Rendered layout layouts/notify.html.haml (Duration: 3.2ms | Allocations: 1269)
+  Rendered layout layouts/notify.text.erb (Duration: 1.2ms | Allocations: 612)
+Delivered mail 648de43d1468f_1935319c760d1@gitlab.yangbaoyuan.cn.mail (11.8ms)
+  Rendered layout layouts/notify.html.haml (Duration: 3.9ms | Allocations: 1432)
+  Rendered layout layouts/notify.text.erb (Duration: 1.2ms | Allocations: 614)
+Delivered mail 648de466bacad_193532dc762f3@gitlab.yangbaoyuan.cn.mail (4.4ms)
