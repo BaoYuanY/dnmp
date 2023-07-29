@@ -1,3 +1,0 @@
-2023-06-16_06:12:26.10442 LOG:  starting PostgreSQL 13.8 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, 64-bit
-2023-06-16_06:12:26.12645 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
-2023-06-16_06:12:26.18267 LOG:  database system was interrupted; last known up at 2023-06-16 06:09:59 GMT

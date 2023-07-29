@@ -1,6 +1,0 @@
-{"level":"info","msg":"Wrapper started","pid":273,"time":"2023-06-16T06:12:23.943Z","wrapper":273}
-{"level":"info","msg":"finding process","pid":273,"pid_file":"/var/opt/gitlab/gitaly/gitaly.pid","time":"2023-06-16T06:12:23.943Z","wrapper":273}
-{"level":"info","msg":"spawning a process","pid":273,"time":"2023-06-16T06:12:23.943Z","wrapper":273}
-{"level":"info","msg":"monitoring process","pid":273,"process":286,"time":"2023-06-16T06:12:23.946Z","wrapper":273}
-time="2023-06-16T06:12:24Z" level=info msg="Starting Gitaly, version 16.0.1"
-{"latencies":[0.001,0.005,0.025,0.1,0.5,1,10,30,60,300,1500],"level":"info","msg":"grpc prometheus histograms enabled","time":"2023-06-16T06:12:24.313Z"}

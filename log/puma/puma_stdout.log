@@ -1,8 +1,0 @@
-{"timestamp":"2023-07-29T10:15:22.216Z","pid":446,"message":"- Worker 0 (PID: 29874) booted in 0.92s, phase: 0"}
-=== puma startup: 2023-07-29 10:21:15 +0000 ===
-{"timestamp":"2023-07-29T10:21:15.816Z","pid":447,"message":"! Promoting existing objects to old generation..."}
-{"timestamp":"2023-07-29T10:21:16.077Z","pid":447,"message":"! Compacting..."}
-Note: GC compacting is currently disabled. Refer to `config/initializers_before_autoloader/003_gc_compact.rb` for details.
-{"timestamp":"2023-07-29T10:21:16.077Z","pid":447,"message":"! Friendly fork preparation complete."}
-{"timestamp":"2023-07-29T10:21:17.023Z","pid":447,"message":"- Worker 0 (PID: 789) booted in 0.91s, phase: 0"}
-{"timestamp":"2023-07-29T10:21:17.608Z","pid":447,"message":"- Worker 1 (PID: 791) booted in 1.43s, phase: 0"}
