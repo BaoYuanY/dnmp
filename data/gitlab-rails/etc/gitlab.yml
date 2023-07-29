@@ -340,11 +340,11 @@ production: &base
 
   ## Container Registry
   registry:
-    enabled: false
-    host: 
-    port: 
-    api_url:  # internal address to the registry, will be used by GitLab to directly communicate with API
-    path: 
+    enabled: true
+    host: gitlab.yangbaoyuan.cn
+    port: 5050
+    api_url: http://127.0.0.1:5000 # internal address to the registry, will be used by GitLab to directly communicate with API
+    path: /var/opt/gitlab/gitlab-rails/shared/registry
     key: /var/opt/gitlab/gitlab-rails/etc/gitlab-registry.key
     issuer: omnibus-gitlab-issuer
     notification_secret: 
