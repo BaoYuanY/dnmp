@@ -33,7 +33,7 @@ services:
       args:
         PHP_VERSION: php:7.4.27-fpm-alpine
         CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix
+        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix,mongodb
         TZ: "$TZ"
     container_name: php74
     expose:
@@ -60,7 +60,7 @@ services:
       args:
         PHP_VERSION: php:8.1.16-fpm-alpine3.17
         CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix
+        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix,mongodb
         TZ: "$TZ"
     container_name: php81
     expose:
@@ -70,9 +70,9 @@ services:
     volumes:
       - /tmp/:/tmp/:rw
       - ${SOURCE_DIR}:/www/:rw
-      - ${PHP_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
-      - ${PHP_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
-      - ${PHP_LOG_DIR}:/var/log/php
+      - ${PHP81_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
+      - ${PHP81_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ${PHP81_LOG_DIR}:/var/log/php
       - ${DATA_DIR}/composer:/tmp/composer
     restart: always
     cap_add:
@@ -103,52 +103,8 @@ services:
   #    networks:
   #      - default
 
-  #  php56:
-  #    build:
-  #      context: ./services/php
-  #      args:
-  #        PHP_VERSION: php:${PHP56_VERSION}-fpm-alpine
-  #        CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-  #        PHP_EXTENSIONS: ${PHP56_EXTENSIONS}
-  #        TZ: "$TZ"
-  #    container_name: php56
-  #    expose:
-  #      - 9501
-  #    volumes:
-  #      - ${SOURCE_DIR}:/www/:rw
-  #      - ${PHP56_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
-  #      - ${PHP56_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
-  #      - ${PHP56_LOG_DIR}:/var/log/php
-  #      - ${DATA_DIR}/composer:/tmp/composer
-  #    restart: always
-  #    cap_add:
-  #      - SYS_PTRACE
-  #    networks:
-  #      - default
-
-  #  php54:
-  #    build:
-  #      context: ./services/php54
-  #      args:
-  #        PHP_VERSION: php:${PHP54_VERSION}-fpm
-  #        CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-  #        PHP_EXTENSIONS: ${PHP54_EXTENSIONS}
-  #        TZ: "$TZ"
-  #    container_name: php54
-  #    volumes:
-  #      - ${SOURCE_DIR}:/www/:rw
-  #      - ${PHP54_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
-  #      - ${PHP54_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
-  #      - ${PHP54_LOG_DIR}:/var/log/php
-  #      - ${DATA_DIR}/composer:/tmp/composer
-  #    restart: always
-  #    cap_add:
-  #      - SYS_PTRACE
-  #    networks:
-  #      - default
-
   mysql:
-    image: mysql/mysql-server:8.0
+    image: mysql:${MYSQL_VERSION}
     container_name: mysql
     ports:
       - "${MYSQL_HOST_PORT}:3306"
@@ -159,22 +115,10 @@ services:
     networks:
       - default
     environment:
-      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
       TZ: "$TZ"
-#  mysql5:
-#    image: mysql:${MYSQL5_VERSION}
-#    container_name: mysql5
-#    ports:
-#      - "${MYSQL5_HOST_PORT}:3306"
-#    volumes:
-#      - ${MYSQL5_CONF_FILE}:/etc/mysql/conf.d/mysql.cnf:ro
-#      - ${DATA_DIR}/mysql5:/var/lib/mysql/:rw
-#    restart: always
-#    networks:
-#      - default
-#    environment:
-#      MYSQL_ROOT_PASSWORD: "${MYSQL5_ROOT_PASSWORD}"
-#      TZ: "$TZ"
+
+
 
 #  openresty:
 #    image:  openresty/openresty:${OPENRESTY_VERSION}
@@ -210,14 +154,14 @@ services:
 #    networks:
 #      - default
 
-  redis6:
-    image: redis:6.2.6-alpine3.14
-    container_name: redis6
+  redis:
+    image: redis:${REDIS_VERSION}
+    container_name: redis
     ports:
-      - "6380:6379"
+      - "${REDIS_HOST_PORT}:6379"
     volumes:
-      - ./services/redis6/redis.conf:/etc/redis.conf:ro
-      - ./data/redis6:/data/:rw
+      - ${REDIS_CONF_FILE}:/etc/redis.conf:ro
+      - ${REDIS_DATA_FILE}:/data/:rw
     restart: always
     entrypoint: [ "redis-server", "/etc/redis.conf" ]
     environment:
@@ -253,32 +197,6 @@ services:
 #    networks:
 #          - default
 
-#  phpmyadmin:
-#    image: phpmyadmin/phpmyadmin:latest
-#    container_name: phpmyadmin
-#    ports:
-#      - "${PHPMYADMIN_HOST_PORT}:80"
-#    volumes:
-#      - ${PHPMYADMIN_USER_CONF_FILE}:/etc/phpmyadmin/config.user.inc.php:ro
-#      - ${PHPMYADMIN_PHP_CONF_FILE}:/usr/local/etc/php/conf.d/php-phpmyadmin.ini:ro
-#    networks:
-#      - default
-#    environment:
-#      - PMA_HOST=mysql
-#      - PMA_PORT=3306
-#      - TZ=$TZ
-
-#  phpredisadmin:
-#    image: erikdubbelboer/phpredisadmin:latest
-#    container_name: phpredisadmin
-#    ports:
-#      - "${REDISMYADMIN_HOST_PORT}:80"
-#    networks:
-#      - default
-#    environment:
-#      - REDIS_1_HOST=redis
-#      - REDIS_1_PORT=6379
-#      - TZ=$TZ
 
 #  mongodb:
 #    image: mongo:${MONGODB_VERSION}
@@ -297,17 +215,6 @@ services:
 #    command:
 #       --auth
 
-#  adminmongo:
-#    image: mrvautin/adminmongo
-#    container_name: adminmongo
-#    ports:
-#      - "${ADMINMONGO_HOST_PORT}:1234"
-#    environment:
-#      - HOST=0.0.0.0
-#      - DB_HOST=mongodb
-#      - DB_PORT=27017
-#    networks:
-#      - default
 
 #  elasticsearch:
 #    build:
@@ -410,9 +317,9 @@ services:
       - '8443:443'
     container_name: gitlab
     volumes:
-      - ./data:/var/opt/gitlab/:rw
-      - ./etc:/etc/gitlab/:rw
-      - ./log:/var/log/gitlab/:rw
+      - ./data/gitlab:/var/opt/gitlab/:rw
+      - ./etc/gitlab:/etc/gitlab/:rw
+      - ./log/gitlab:/var/log/gitlab/:rw
     shm_size: '2000m'
 
 
