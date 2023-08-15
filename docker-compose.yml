@@ -303,6 +303,8 @@ services:
 #    networks:
 #      - default
 
+
+
   gitlab:
     image: 'gitlab/gitlab-ee:16.0.1-ee.0'
     restart: 'no'
