@@ -60,7 +60,7 @@ services:
       args:
         PHP_VERSION: php:8.1.16-fpm-alpine3.17
         CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix,mongodb,fileinfo
+        PHP_EXTENSIONS: pdo_mysql,mysqli,mbstring,gd,curl,opcache,memcached,xdebug,redis,zip,bcmath,sockets,posix,mongodb,fileinfo,swoole
         TZ: "$TZ"
     container_name: php81
     expose:
@@ -107,7 +107,7 @@ services:
     image: mysql:${MYSQL_VERSION}
     container_name: mysql
     ports:
-      - "${MYSQL_HOST_PORT}:3306"
+      - "${MYSQL_HOST_PORT}:3307"
     volumes:
       - ${MYSQL_CONF_FILE}:/etc/mysql/conf.d/mysql.cnf:ro
       - ${DATA_DIR}/mysql:/var/lib/mysql/:rw
