@@ -51,7 +51,7 @@ services:
     cap_add:
       - SYS_PTRACE
     networks:
-      - default
+      - nginx_network
 
 
   php81:
@@ -78,7 +78,7 @@ services:
     cap_add:
       - SYS_PTRACE
     networks:
-      - default
+      - nginx_network
 
   #  php80:
   #    build:
@@ -113,7 +113,7 @@ services:
       - ${DATA_DIR}/mysql:/var/lib/mysql/:rw
     restart: always
     networks:
-      - default
+      - nginx_network
     environment:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
       TZ: "$TZ"
@@ -167,7 +167,7 @@ services:
     environment:
       TZ: "$TZ"
     networks:
-      - default
+      - nginx_network
 
 #  memcached:
 #    image: memcached:${MEMCACHED_VERSION}
@@ -326,4 +326,5 @@ services:
 
 
 networks:
-  default:
+  nginx_network:
+    external: true
