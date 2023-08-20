@@ -207,7 +207,7 @@ fi
 
 if [[ -z "${EXTENSIONS##*,gd,*}" ]]; then
     echo "---------- Install gd ----------"
-    isPhpVersionGreaterOrEqual 7 4
+    isPhpVersionGreaterOrEqual 7 0
 
     if [[ "$?" = "1" ]]; then
         # "--with-xxx-dir" was removed from php 7.4,
@@ -448,7 +448,7 @@ if [[ -z "${EXTENSIONS##*,varnish,*}" ]]; then
 fi
 
 if [[ -z "${EXTENSIONS##*,pdo_sqlsrv,*}" ]]; then
-    isPhpVersionGreaterOrEqual 7 1
+    isPhpVersionGreaterOrEqual 7 0
     if [[ "$?" = "1" ]]; then
         echo "---------- Install pdo_sqlsrv ----------"
         apk add --no-cache unixodbc-dev
@@ -462,7 +462,7 @@ if [[ -z "${EXTENSIONS##*,pdo_sqlsrv,*}" ]]; then
 fi
 
 if [[ -z "${EXTENSIONS##*,sqlsrv,*}" ]]; then
-    isPhpVersionGreaterOrEqual 7 1
+    isPhpVersionGreaterOrEqual 7 0
     if [[ "$?" = "1" ]]; then
         echo "---------- Install sqlsrv ----------"
         apk add --no-cache unixodbc-dev
@@ -562,7 +562,7 @@ if [[ -z "${EXTENSIONS##*,xdebug,*}" ]]; then
     isPhpVersionGreaterOrEqual 7 0
 
     if [[ "$?" = "1" ]]; then
-        isPhpVersionGreaterOrEqual 7 4
+        isPhpVersionGreaterOrEqual 7 0
         if [[ "$?" = "1" ]]; then
             installExtensionFromTgz xdebug-2.9.2
         else
@@ -621,7 +621,7 @@ if [[ -z "${EXTENSIONS##*,zip,*}" ]]; then
     # Fix: https://github.com/docker-library/php/issues/797
     apk add --no-cache libzip-dev
 
-    isPhpVersionGreaterOrEqual 7 4
+    isPhpVersionGreaterOrEqual 7 0
     if [[ "$?" != "1" ]]; then
         docker-php-ext-configure zip --with-libzip=/usr/include
     fi
