@@ -5,8 +5,8 @@ export MC="-j$(nproc)"
 echo
 echo "============================================"
 echo "Install extensions from   : install.sh"
-echo "PHP version               : ${PHP_VERSION}"
-echo "Extra Extensions          : ${PHP_EXTENSIONS}"
+echo "PHP version               : ${PHP81_VERSION}"
+echo "Extra Extensions          : ${PHP81_EXTENSIONS}"
 echo "Multicore Compilation     : ${MC}"
 echo "Container package url     : ${CONTAINER_PACKAGE_URL}"
 echo "Work directory            : ${PWD}"
@@ -14,12 +14,12 @@ echo "============================================"
 echo
 
 
-if [ "${PHP_EXTENSIONS}" != "" ]; then
+if [ "${PHP81_EXTENSIONS}" != "" ]; then
     apk --update add --no-cache --virtual .build-deps autoconf g++ libtool make curl-dev gettext-dev linux-headers
 fi
 
 
-export EXTENSIONS=",${PHP_EXTENSIONS},"
+export EXTENSIONS=",${PHP81_EXTENSIONS},"
 
 
 #
@@ -674,7 +674,7 @@ if [[ -z "${EXTENSIONS##*,sdebug,*}" ]]; then
     fi
 fi
 
-if [ "${PHP_EXTENSIONS}" != "" ]; then
+if [ "${PHP81_EXTENSIONS}" != "" ]; then
     apk del .build-deps \
     && docker-php-source delete
 fi
