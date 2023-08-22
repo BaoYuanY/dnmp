@@ -323,7 +323,8 @@ services:
       - ./etc/gitlab:/etc/gitlab/:rw
       - ./log/gitlab:/var/log/gitlab/:rw
     shm_size: '2000m'
-
+    networks:
+      - nginx_network
 
 networks:
   nginx_network:
